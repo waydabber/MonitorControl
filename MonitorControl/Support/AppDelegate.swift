@@ -22,7 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   var jobRunning = false
   var startupActionWriteCounter: Int = 0
   var audioPlayer: AVAudioPlayer?
-  let updaterController = SPUStandardUpdaterController(startingUpdater: false, updaterDelegate: UpdaterDelegate(), userDriverDelegate: nil)
+  // let updaterController = SPUStandardUpdaterController(startingUpdater: false, updaterDelegate: UpdaterDelegate(), userDriverDelegate: nil) TODO: Removed temporarily
 
   var preferencePaneStyle: Settings.Style {
     if !DEBUG_MACOS10, #available(macOS 11.0, *) {
@@ -59,7 +59,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     CGDisplayRegisterReconfigurationCallback({ _, _, _ in app.displayReconfigured() }, nil)
     self.configure(firstrun: true)
     DisplayManager.shared.createGammaActivityEnforcer()
-    self.updaterController.startUpdater()
+    // self.updaterController.startUpdater() TODO: Removed temporarily
   }
 
   @objc func quitClicked(_: AnyObject) {

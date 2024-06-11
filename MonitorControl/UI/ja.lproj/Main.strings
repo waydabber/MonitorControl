@@ -26,8 +26,8 @@
 /* Class = "NSMenuItem"; title = "Show separate controls for each display in menu"; ObjectID = "3eO-bN-ZRl"; */
 "3eO-bN-ZRl.title" = "メニュー内の各ディスプレイに個別のコントロールを表示";
 
-/* Class = "NSButtonCell"; title = "https://monitorcontrol.app"; ObjectID = "42n-Zy-AqF"; Note = "#bc-ignore!"; */
-"42n-Zy-AqF.title" = "https://monitorcontrol.app";
+
+
 
 /* Class = "NSMenuItem"; title = "Custom keyboard shortcuts"; ObjectID = "4CG-0I-anB"; */
 "4CG-0I-anB.title" = "カスタムキーボードショートカット";
@@ -209,8 +209,8 @@
 /* Class = "NSMenuItem"; title = "Normal"; ObjectID = "Riq-uM-bTs"; */
 "Riq-uM-bTs.title" = "通常";
 
-/* Class = "NSTextFieldCell"; title = "@the0neyouseek (Guillaume B.)\n@JoniVR (Joni Van Roost)\n@waydabber (István T.)"; ObjectID = "TKd-J8-Iyk"; */
-"TKd-J8-Iyk.title" = "@the0neyouseek (Guillaume B.)\n@JoniVR (Joni Van Roost)\n@waydabber (István T.)";
+
+
 
 /* Class = "NSButtonCell"; title = "Show advanced settings"; ObjectID = "UBq-Od-SIB"; */
 "UBq-Od-SIB.title" = "詳細設定を表示";

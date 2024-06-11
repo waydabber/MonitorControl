@@ -226,7 +226,8 @@ class MenuHandler: NSMenu, NSMenuDelegate {
       SettingsIcon.image = NSImage(systemSymbolName: "gearshape", accessibilityDescription: NSLocalizedString("Settings…", comment: "Shown in menu"))
       SettingsIcon.alternateImage = NSImage(systemSymbolName: "gearshape.fill", accessibilityDescription: NSLocalizedString("Settings…", comment: "Shown in menu"))
       SettingsIcon.alphaValue = 0.3
-      SettingsIcon.frame = NSRect(x: menuItemView.frame.maxX - iconSize * 3 - 30 - 16 + compensateForBlock, y: menuItemView.frame.origin.y + 5, width: iconSize, height: iconSize)
+      SettingsIcon.frame = NSRect(x: menuItemView.frame.maxX - iconSize * 2 - 10 - 16 + compensateForBlock, y: menuItemView.frame.origin.y + 5, width: iconSize, height: iconSize)
+      // SettingsIcon.frame = NSRect(x: menuItemView.frame.maxX - iconSize * 3 - 30 - 16 + compensateForBlock, y: menuItemView.frame.origin.y + 5, width: iconSize, height: iconSize)
       SettingsIcon.imageScaling = .scaleProportionallyUpOrDown
       SettingsIcon.action = #selector(app.prefsClicked)
 
@@ -238,11 +239,13 @@ class MenuHandler: NSMenu, NSMenuDelegate {
       updateIcon.image = NSImage(systemSymbolName: symbolName, accessibilityDescription: NSLocalizedString("Check for updates…", comment: "Shown in menu"))
       updateIcon.alternateImage = NSImage(systemSymbolName: symbolName + ".fill", accessibilityDescription: NSLocalizedString("Check for updates…", comment: "Shown in menu"))
 
-      updateIcon.alphaValue = 0.3
-      updateIcon.frame = NSRect(x: menuItemView.frame.maxX - iconSize * 2 - 10 - 16 + compensateForBlock, y: menuItemView.frame.origin.y + 5, width: iconSize, height: iconSize)
-      updateIcon.imageScaling = .scaleProportionallyUpOrDown
-      updateIcon.action = #selector(app.updaterController.checkForUpdates(_:))
-      updateIcon.target = app.updaterController
+      /* TODO: Removed temporarily
+       updateIcon.alphaValue = 0.3
+       updateIcon.frame = NSRect(x: menuItemView.frame.maxX - iconSize * 2 - 10 - 16 + compensateForBlock, y: menuItemView.frame.origin.y + 5, width: iconSize, height: iconSize)
+       updateIcon.imageScaling = .scaleProportionallyUpOrDown
+        updateIcon.action = #selector(app.updaterController.checkForUpdates(_:))
+        updateIcon.target = app.updaterController
+        */
 
       let quitIcon = NSButton()
       quitIcon.bezelStyle = .regularSquare
@@ -267,9 +270,11 @@ class MenuHandler: NSMenu, NSMenuDelegate {
         self.insertItem(NSMenuItem.separator(), at: self.items.count)
       }
       self.insertItem(withTitle: NSLocalizedString("Settings…", comment: "Shown in menu"), action: #selector(app.prefsClicked), keyEquivalent: ",", at: self.items.count)
-      let updateItem = NSMenuItem(title: NSLocalizedString("Check for updates…", comment: "Shown in menu"), action: #selector(app.updaterController.checkForUpdates(_:)), keyEquivalent: "")
-      updateItem.target = app.updaterController
-      self.insertItem(updateItem, at: self.items.count)
+      /* TODO: Removed temporarily
+       let updateItem = NSMenuItem(title: NSLocalizedString("Check for updates…", comment: "Shown in menu"), action: #selector(app.updaterController.checkForUpdates(_:)), keyEquivalent: "")
+       updateItem.target = app.updaterController
+       self.insertItem(updateItem, at: self.items.count)
+        */
       self.insertItem(withTitle: NSLocalizedString("Quit", comment: "Shown in menu"), action: #selector(app.quitClicked), keyEquivalent: "q", at: self.items.count)
     }
   }

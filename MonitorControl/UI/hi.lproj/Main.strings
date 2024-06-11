@@ -26,8 +26,8 @@
 /* Class = "NSMenuItem"; title = "Show separate controls for each display in menu"; ObjectID = "3eO-bN-ZRl"; */
 "3eO-bN-ZRl.title" = "सूची में प्रत्येक प्रदर्शन के लिए अलग-अलग नियंत्रण दिखाएँ";
 
-/* Class = "NSButtonCell"; title = "https://monitorcontrol.app"; ObjectID = "42n-Zy-AqF"; Note = "#bc-ignore!"; */
-"42n-Zy-AqF.title" = "https://monitorcontrol.app";
+
+
 
 /* Class = "NSMenuItem"; title = "Custom keyboard shortcuts"; ObjectID = "4CG-0I-anB"; */
 "4CG-0I-anB.title" = "अनुकूलित कीबोर्ड शॉर्टकट";
@@ -209,8 +209,8 @@
 /* Class = "NSMenuItem"; title = "Normal"; ObjectID = "Riq-uM-bTs"; */
 "Riq-uM-bTs.title" = "सामान्य";
 
-/* Class = "NSTextFieldCell"; title = "@the0neyouseek (Guillaume B.)\n@JoniVR (Joni Van Roost)\n@waydabber (István T.)"; ObjectID = "TKd-J8-Iyk"; */
-"TKd-J8-Iyk.title" = "@the0neyouseek (Guillaume B.)\n@JoniVR (Joni Van Roost)\n@waydabber (István T.)";
+
+
 
 /* Class = "NSButtonCell"; title = "Show advanced settings"; ObjectID = "UBq-Od-SIB"; */
 "UBq-Od-SIB.title" = "उन्नत विन्यास दिखाएँ";

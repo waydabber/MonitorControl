@@ -331,8 +331,8 @@
 /* Class = "NSTextFieldCell"; title = "General menu items style:"; ObjectID = "thh-DG-ecH"; */
 "thh-DG-ecH.title" = "Estilo de itens do menu geral:";
 
-/* Class = "NSTextFieldCell"; title = "@the0neyouseek (Guillaume B.)\n@JoniVR (Joni Van Roost)\n@waydabber (István T.)"; ObjectID = "TKd-J8-Iyk"; */
-"TKd-J8-Iyk.title" = "@the0neyouseek (Guillaume B.)\n@JoniVR (Joni Van Roost)\n@waydabber (István T.)";
+
+
 
 /* Class = "NSTextFieldCell"; title = "Menu Icon:"; ObjectID = "u6s-Pb-BCG"; */
 "u6s-Pb-BCG.title" = "Ícone do Menu:";

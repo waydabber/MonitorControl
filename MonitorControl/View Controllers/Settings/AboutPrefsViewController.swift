@@ -29,8 +29,8 @@ class AboutPrefsViewController: NSViewController, PreferencePane {
     super.viewWillAppear()
   }
 
-  @IBAction func checkForUpdates(sender: NSButton) {
-    app.updaterController.checkForUpdates(sender)
+  @IBAction func checkForUpdates(sender _: NSButton) {
+    // app.updaterController.checkForUpdates(sender) TODO: Removed temporarily
   }
 
   @IBAction func openDonate(_: NSButton) {
@@ -40,7 +40,7 @@ class AboutPrefsViewController: NSViewController, PreferencePane {
   }
 
   @IBAction func openWebPage(_: NSButton) {
-    if let url = URL(string: "https://monitorcontrol.app") {
+    if let url = URL(string: "https://github.com/waydabber/MonitorControl/") { // TODO: Unofficial link
       NSWorkspace.shared.open(url)
     }
   }

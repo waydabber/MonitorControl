@@ -194,8 +194,8 @@
 /* Class = "NSMenuItem"; title = "Normal"; ObjectID = "Riq-uM-bTs"; */
 "Riq-uM-bTs.title" = "Normálne";
 
-/* Class = "NSTextFieldCell"; title = "@the0neyouseek (Guillaume B.)\n@JoniVR (Joni Van Roost)\n@waydabber (István T.)"; ObjectID = "TKd-J8-Iyk"; */
-"TKd-J8-Iyk.title" = "@the0neyouseek (Guillaume B.)\n@JoniVR (Joni Van Roost)\n@waydabber (István T.)";
+
+
 
 /* Class = "NSButtonCell"; title = "Show advanced settings"; ObjectID = "UBq-Od-SIB"; */
 "UBq-Od-SIB.title" = "Zobraziť pokročilé nastavenia";
