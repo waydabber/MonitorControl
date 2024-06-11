@@ -219,16 +219,16 @@ class MenuHandler: NSMenu, NSMenuDelegate {
 
       let menuItemView = NSView(frame: NSRect(x: 0, y: 0, width: viewWidth, height: iconSize + 10))
 
-      let preferencesIcon = NSButton()
-      preferencesIcon.bezelStyle = .regularSquare
-      preferencesIcon.isBordered = false
-      preferencesIcon.setButtonType(.momentaryChange)
-      preferencesIcon.image = NSImage(systemSymbolName: "gearshape", accessibilityDescription: NSLocalizedString("Preferences…", comment: "Shown in menu"))
-      preferencesIcon.alternateImage = NSImage(systemSymbolName: "gearshape.fill", accessibilityDescription: NSLocalizedString("Preferences…", comment: "Shown in menu"))
-      preferencesIcon.alphaValue = 0.3
-      preferencesIcon.frame = NSRect(x: menuItemView.frame.maxX - iconSize * 3 - 30 - 16 + compensateForBlock, y: menuItemView.frame.origin.y + 5, width: iconSize, height: iconSize)
-      preferencesIcon.imageScaling = .scaleProportionallyUpOrDown
-      preferencesIcon.action = #selector(app.prefsClicked)
+      let SettingsIcon = NSButton()
+      SettingsIcon.bezelStyle = .regularSquare
+      SettingsIcon.isBordered = false
+      SettingsIcon.setButtonType(.momentaryChange)
+      SettingsIcon.image = NSImage(systemSymbolName: "gearshape", accessibilityDescription: NSLocalizedString("Settings…", comment: "Shown in menu"))
+      SettingsIcon.alternateImage = NSImage(systemSymbolName: "gearshape.fill", accessibilityDescription: NSLocalizedString("Settings…", comment: "Shown in menu"))
+      SettingsIcon.alphaValue = 0.3
+      SettingsIcon.frame = NSRect(x: menuItemView.frame.maxX - iconSize * 3 - 30 - 16 + compensateForBlock, y: menuItemView.frame.origin.y + 5, width: iconSize, height: iconSize)
+      SettingsIcon.imageScaling = .scaleProportionallyUpOrDown
+      SettingsIcon.action = #selector(app.prefsClicked)
 
       let updateIcon = NSButton()
       updateIcon.bezelStyle = .regularSquare
@@ -256,7 +256,7 @@ class MenuHandler: NSMenu, NSMenuDelegate {
       quitIcon.imageScaling = .scaleProportionallyUpOrDown
       quitIcon.action = #selector(app.quitClicked)
 
-      menuItemView.addSubview(preferencesIcon)
+      menuItemView.addSubview(SettingsIcon)
       menuItemView.addSubview(updateIcon)
       menuItemView.addSubview(quitIcon)
       let item = NSMenuItem()
@@ -266,7 +266,7 @@ class MenuHandler: NSMenu, NSMenuDelegate {
       if app.macOS10() {
         self.insertItem(NSMenuItem.separator(), at: self.items.count)
       }
-      self.insertItem(withTitle: NSLocalizedString("Preferences…", comment: "Shown in menu"), action: #selector(app.prefsClicked), keyEquivalent: ",", at: self.items.count)
+      self.insertItem(withTitle: NSLocalizedString("Settings…", comment: "Shown in menu"), action: #selector(app.prefsClicked), keyEquivalent: ",", at: self.items.count)
       let updateItem = NSMenuItem(title: NSLocalizedString("Check for updates…", comment: "Shown in menu"), action: #selector(app.updaterController.checkForUpdates(_:)), keyEquivalent: "")
       updateItem.target = app.updaterController
       self.insertItem(updateItem, at: self.items.count)

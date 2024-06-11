@@ -26,7 +26,6 @@ class AppleDisplay: Display {
     }
     self.displayQueue.sync {
       DisplayServicesSetBrightness(self.identifier, value)
-      DisplayServicesBrightnessChanged(self.identifier, Double(value))
     }
   }
 
