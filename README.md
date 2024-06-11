@@ -4,7 +4,7 @@
 <h3>MonitorControl (Unofficial) - for Apple Silicon and Intel</h3>
 <p>Controls your external display brightness and volume and shows native OSD.
 Use menubar extra sliders or the keyboard, including native Apple keys!</p>
-<a href="https://github.com/MonitorControl/MonitorControl/releases"><img src=".github/macos_badge_noborder.png" width="175" alt="Download for macOS"/></a>
+<a href="https://github.com/waydabber/MonitorControl/releases"><img src=".github/macos_badge_noborder.png" width="175" alt="Download for macOS"/></a>
 </div>
 
 <hr>
