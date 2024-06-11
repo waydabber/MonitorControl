@@ -6,7 +6,7 @@ import Preferences
 import ServiceManagement
 
 class MainPrefsViewController: NSViewController, PreferencePane {
-  let preferencePaneIdentifier = Preferences.PaneIdentifier.main
+  let preferencePaneIdentifier = Settings.PaneIdentifier.main
   let preferencePaneTitle: String = NSLocalizedString("General", comment: "Shown in the main prefs window")
 
   var toolbarItemIcon: NSImage {
@@ -61,7 +61,7 @@ class MainPrefsViewController: NSViewController, PreferencePane {
     self.enableSmooth.state = prefs.bool(forKey: PrefKey.disableSmoothBrightness.rawValue) ? .off : .on
     self.enableBrightnessSync.state = prefs.bool(forKey: PrefKey.enableBrightnessSync.rawValue) ? .on : .off
     self.startupAction.selectItem(withTag: prefs.integer(forKey: PrefKey.startupAction.rawValue))
-    // Preload Display preferences to some extent to properly set up size in orther that animation won't fail
+    // Preload Display Settings to some extent to properly set up size in orther that animation won't fail
     menuslidersPrefsVc?.view.layoutSubtreeIfNeeded()
     keyboardPrefsVc?.view.layoutSubtreeIfNeeded()
     displaysPrefsVc?.view.layoutSubtreeIfNeeded()
@@ -159,8 +159,8 @@ class MainPrefsViewController: NSViewController, PreferencePane {
   @available(macOS, deprecated: 10.10)
   @IBAction func resetPrefsClicked(_: NSButton) {
     let alert = NSAlert()
-    alert.messageText = NSLocalizedString("Reset Preferences?", comment: "Shown in the alert dialog")
-    alert.informativeText = NSLocalizedString("Are you sure you want to reset all preferences?", comment: "Shown in the alert dialog")
+    alert.messageText = NSLocalizedString("Reset Settings?", comment: "Shown in the alert dialog")
+    alert.informativeText = NSLocalizedString("Are you sure you want to reset all Settings?", comment: "Shown in the alert dialog")
     alert.addButton(withTitle: NSLocalizedString("Yes", comment: "Shown in the alert dialog"))
     alert.addButton(withTitle: NSLocalizedString("No", comment: "Shown in the alert dialog"))
     alert.alertStyle = NSAlert.Style.warning

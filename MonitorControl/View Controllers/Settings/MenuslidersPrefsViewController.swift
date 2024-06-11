@@ -6,7 +6,7 @@ import Preferences
 import ServiceManagement
 
 class MenuslidersPrefsViewController: NSViewController, PreferencePane {
-  let preferencePaneIdentifier = Preferences.PaneIdentifier.menusliders
+  let preferencePaneIdentifier = Settings.PaneIdentifier.menusliders
   let preferencePaneTitle: String = NSLocalizedString("App menu", comment: "Shown in the main prefs window")
 
   var toolbarItemIcon: NSImage {

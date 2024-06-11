@@ -6,7 +6,7 @@ import Preferences
 import ServiceManagement
 
 class KeyboardPrefsViewController: NSViewController, PreferencePane {
-  let preferencePaneIdentifier = Preferences.PaneIdentifier.keyboard
+  let preferencePaneIdentifier = Settings.PaneIdentifier.keyboard
   let preferencePaneTitle: String = NSLocalizedString("Keyboard", comment: "Shown in the main prefs window")
 
   var toolbarItemIcon: NSImage {

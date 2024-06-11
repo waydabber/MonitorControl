@@ -5,7 +5,7 @@ import Preferences
 import ServiceManagement
 
 class AboutPrefsViewController: NSViewController, PreferencePane {
-  let preferencePaneIdentifier = Preferences.PaneIdentifier.about
+  let preferencePaneIdentifier = Settings.PaneIdentifier.about
   let preferencePaneTitle: String = NSLocalizedString("About", comment: "Shown in the main prefs window")
 
   var toolbarItemIcon: NSImage {
