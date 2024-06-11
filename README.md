@@ -1,52 +1,21 @@
 <img src=".github/Icon-cropped.png" width="200" alt="App icon" align="left"/>
 
 <div>
-<h3>MonitorControl - for Apple Silicon and Intel</h3>
+<h3>MonitorControl (Unofficial) - for Apple Silicon and Intel</h3>
 <p>Controls your external display brightness and volume and shows native OSD.
 Use menubar extra sliders or the keyboard, including native Apple keys!</p>
 <a href="https://github.com/MonitorControl/MonitorControl/releases"><img src=".github/macos_badge_noborder.png" width="175" alt="Download for macOS"/></a>
 </div>
 
-<br/><br/>
-
-<div align="center">
-<!-- shields -->
-<!-- downloads -->
-<a href="https://github.com/MonitorControl/MonitorControl/releases">
-<img src="https://img.shields.io/github/downloads/MonitorControl/MonitorControl/total.svg?style=flat" alt="downloads"/>
-</a>
-<!-- version -->
-<a href="https://github.com/MonitorControl/MonitorControl/releases">
-<img src="https://img.shields.io/github/release-pre/MonitorControl/MonitorControl.svg?style=flat" alt="latest version"/>
-</a>
-<!-- license -->
-<a href="https://github.com/MonitorControl/MonitorControl/blob/master/License.txt">
-<img src="https://img.shields.io/github/license/MonitorControl/MonitorControl.svg?style=flat" alt="license"/>
-</a>
-<!-- platform -->
-<a href="https://github.com/MonitorControl/MonitorControl">
-<img src="https://img.shields.io/badge/platform-macOS-lightgrey.svg?style=flat" alt="platform"/>
-</a>
-<!-- backers -->
-<a href="https://opencollective.com/monitorcontrol">
-<img src="https://opencollective.com/monitorcontrol/tiers/badge.svg" alt="backers"/>
-</a>
-
-<br/>
-<br/>
+<hr>
 
 <img src=".github/screenshot.png" width="824" alt="Screenshot"/><br/>
 
 </div>
 
-<hr>
+## Unofficial build
 
-## Download
-
-Go to [Releases](https://github.com/MonitorControl/MonitorControl/releases) and download the latest `.dmg`, or you can install via Homebrew:
-```shell
-brew install MonitorControl
-```
+This repository contains unofficial builds of MonitorControl.
 
 ## Major features
 
@@ -141,8 +110,6 @@ git clone https://github.com/MonitorControl/MonitorControl.git
 
 ## Maintainers
 
-- [@the0neyouseek](https://github.com/the0neyouseek)
-- [@JoniVR](https://github.com/JoniVR)
 - [@waydabber](https://github.com/waydabber)
 
 ## Thanks
